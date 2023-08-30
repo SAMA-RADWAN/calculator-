@@ -1,0 +1,45 @@
+
+class Calculator:
+    def __init__(self):
+        self.result = 0
+
+    def add(self, num):
+        self.result += num
+
+    def subtract(self, num):
+        self.result -= num
+
+    def multiply(self, num):
+        self.result *= num
+
+    def divide(self, num):
+        if num != 0:
+            self.result /= num
+        else:
+            print("Error: Cannot divide by zero")
+
+    def clear(self):
+        self.result = 0
+
+
+# Example usage
+calc = Calculator()
+print("Initial result:", calc.result)
+
+calc.add(5)
+print("After adding 5:", calc.result)
+
+calc.subtract(2)
+print("After subtracting 2:", calc.result)
+
+calc.multiply(3)
+print("After multiplying by 3:", calc.result)
+
+calc.divide(4)
+print("After dividing by 4:", calc.result)
+
+calc.clear()
+print("After clearing the result:", calc.result)
+```
+
+
